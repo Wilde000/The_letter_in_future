@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    width: 1046px;
+    height: 1411px;
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #fffafa;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: 0 auto;
+    
+}
+
+
+
+header .content {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    gap: 1045px;
+    flex-wrap: wrap;
+    align-self: center;
+    background: linear-gradient(to right, #daebfb, #fafbfb, #daebfb);
+    margin: 0;
+}
+
+main {
+    margin: 0 auto;
+    /*width: 1046px;*/
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main {
+    
+    display: flex;
+    position: relative;
+   
+    justify-content: center;
+}
+
+.logo {
+    position: relative;
+    margin: 5px;
+    padding: 1px;
+    width: 173px;
+    height: 80px;
+    
+    margin-bottom: -20px;
+    margin-left: 180px;
+    
+}
+
+.button {
+    background-color: #6186C9;
+    border: 12px solid linear-gradient(180deg, #789bc3, #f2f2f2, #789bc3);
+    border-image: linear-gradient(180deg, #789bc3, #f2f2f2, #7891d2);
+    border-radius: 19px;
+    font-size: 22px;
+    color: #EDEDED;
+    width: 242px;
+    height: 57px;
+    margin: 1px;
+    margin-top: 16px;
+    padding: 1px;
+    margin-right: 64px;
+}
+.button:hover, .button:focus {
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.3);
+}
+
+header{
+    display: block;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    padding-top: 0px;
+    height: 90px;
+    box-shadow: 0px 0px 10px rgba(0, 4, 0.33, 0.5);
+    
+    
+}
+
+.formular {
+    display: block;
+    position: relative;
+    z-index: 2;
+    top: -700px;
+    left: 250px;
+}
+
+.text_form {
+    color: #001e57;
+    font-size: 25px;
+    font-weight: medium;
+}
+
+.user_form {
+    background-color: #f6fbff;
+    border: 2px solid;
+    border-image: linear-gradient(180deg, #789bc3, #f2f2f2, #7891d2);
+    border-radius: 18px;
+}
+
+.user_form:hover, .user_form:focus, .user_form:active {
+    border: 2px solid #001e57;
+}
+
+.checkbox-groupe {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    
+}
+
+
+.text-style {
+    color: #5c5c5c;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.message {
+    
+    width: 602px;
+    height: 275px;
+}
+
+.message::placeholder {
+    color: #e1e1e1;
+    margin-left: 30px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.email {
+    font-size: 16px;
+    width: 602px;
+    height: 57px;
+}
+
+.email::placeholder {
+    color: #e1e1e1;
+}
+
+.send {
+    display: inline;
+    margin-left: 290px;
+    margin-right: 290px;;
+}
+
+footer {
+    width: 1046px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: inline-end;
+    margin-top: 950px;
+}
+
+.find {
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+@media screen and(min-width: 768px) and(max-width: 1023px) {
+    header {
+        width: 1020px;
+        height: 50px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and(max-width: 768px) {
+        body, header, main, footer {
+            width: 100%;
+        }
+    
+        header, main, footer {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        main > img {
+            width: 300px !important;
+            height: 123px !important;
+        }
+
+        main > img .letter {
+            width: 635.9px !important;
+            height: 773px !important;
+            margin-top: 102px !important;
+            margin-left: 24.5px !important;
+            margin-right: 24.5px !important;
+        }
+
+        .logo img {
+            display: flex !important;
+            margin: 0 auto !important;
+            justify-content: center;
+        }
+
+         input .button .write {
+            display: none !important;
+            visibility: hidden;
+        }
+    }

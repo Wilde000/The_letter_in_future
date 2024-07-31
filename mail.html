@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "email, future, letter">
+    <meta name="description" content="A letter to yourself in the future">
+    <link rel="stylesheet" href="mail.css">
+    <title>Капсула времени</title>
+</head>
+<body>
+    <header class="header">
+        <form class="content" action="/mail.php" method="post">
+            <div class="logo">
+                <img src="/img/Group 11.png">
+            </div>
+            <input class="button write" type="submit" id="write" value="Написать письмо" style="display: flexbox; justify-content: flex-end;">
+        </form>
+    </header>
+    
+<main class="main">
+    <img src="/img/стрелка.png" alt="Письмо себе в будущее" style="width: 451.9px; height: 175.36px; margin-top: 50px;">
+    <div class="letter">
+        <img src="/img/письмо.png" style="margin-top: -58px; margin-left: 150px; margin-right: 180px; width: 821px; height: 998px; display: block; justify-content: center; ">
+    </div>
+    <form class="formular" action="save_letter.php" method="post">
+        <label class="text_form" for="email">Адрес электронной почты:</label><br><br>
+        <input class="user_form email" type="email" id="email" name="email" placeholder="Ввести email" autocomplete="on" required><br><br>
+
+        <label class="text_form" for="message">Содержание письма:</label><br><br>
+        <textarea class="user_form message" id="message" placeholder="Ввести текстовое содержание" name="message" rows="10" cols="30" required></textarea><br><br>
+        
+        <label class="text_form" for="date">Получить через:</label><br><br>
+        <div class="checkbox-group">
+            <input class="day" type="checkbox" id="day" name="day">
+            <label class="text-style" for="day">1 день</label>
+
+            <input class="year" type="checkbox" id="year" name="year">
+            <label class="text-style" for="year">1 год</label>
+
+            <input class="years" type="checkbox" id="years" name="years">
+            <label class="text-style" for="years">3 года</label>
+
+            <br><br><input class="button send" type="submit" id="send" value="Отправить письмо">
+        </div>
+    </form>
+</main>
+
+<footer>
+    <p class="find">© 2024 ALL RIGHTS RESERVED</p>
+</footer>
+</body>
+</html>
